@@ -79,3 +79,42 @@ nav ul {
 nav a {
   text-decoration: none;
 }
+
+/* La section d'accueil est aérée et son contenu est centré. */
+#accueil {
+  padding: 5rem 1.5rem;
+  background-color: var(--couleur-fond-cartes);
+  text-align: center;
+}
+
+#accueil h1 {
+  max-width: 30ch;
+  margin: 0 auto 1rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+#accueil p {
+  max-width: 65ch;
+  margin: 0 auto 1.75rem;
+  font-size: 1.125rem;
+}
+
+/* Le lien d'action devient un bouton confortable et accessible. */
+#accueil a {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanc);
+  text-decoration: none;
+}
+
+#accueil a:hover {
+  background-color: var(--couleur-accent);
+  color: var(--couleur-blanc);
+}
+
+#accueil a:focus-visible {
+  outline: 3px solid var(--couleur-texte);
+  outline-offset: 3px;
+}
