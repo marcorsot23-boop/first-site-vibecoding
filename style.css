@@ -163,3 +163,26 @@ nav a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* La section à propos garde toute sa largeur avec un fond blanc. */
+#a-propos {
+  padding: 5rem 1.5rem;
+  background-color: var(--couleur-blanc);
+}
+
+#a-propos h2,
+#a-propos p {
+  max-width: 65ch;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#a-propos h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#a-propos p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
