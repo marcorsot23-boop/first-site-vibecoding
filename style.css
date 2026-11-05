@@ -1,1 +1,81 @@
-/* Styles du site */
+/* Couleurs du site : modifiez ces valeurs pour changer la palette. */
+:root {
+  --couleur-principale: #1D4ED8;
+  --couleur-accent: #9A3412;
+  --couleur-fond: #F8FAFC;
+  --couleur-texte: #172554;
+  --couleur-blanc: #FFFFFF;
+  --couleur-fond-cartes: #EFF6FF;
+}
+
+/* Reset simple : une boîte prévisible et aucune marge par défaut. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Styles communs à toute la page. */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-fond);
+  line-height: 1.6;
+}
+
+/* Titres lisibles, avec une hauteur de ligne adaptée. */
+h1,
+h2,
+h3 {
+  color: var(--couleur-principale);
+  line-height: 1.2;
+}
+
+/* Liens visibles et soulignés, avec un repère clair au clavier. */
+a {
+  color: var(--couleur-principale);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--couleur-accent);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--couleur-accent);
+  outline-offset: 3px;
+}
+
+/* La marque et la navigation restent côte à côte quand il y a de la place. */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding: 1rem 5%;
+  background-color: var(--couleur-blanc);
+  border-bottom: 1px solid var(--couleur-fond-cartes);
+}
+
+/* La marque se distingue sans ajouter d'image ou modifier le HTML. */
+header > a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Les liens de navigation s'alignent en ligne et peuvent passer à la ligne. */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+}
